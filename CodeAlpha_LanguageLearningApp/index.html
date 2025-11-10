@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual Flashcard & Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Multi Language Learning App</h1>
+
+    <div class="language-select">
+      <label for="language">Choose Language:</label>
+      <select id="language">
+        <option>Tamil</option>
+        <option>Malayalam</option>
+        <option>Hindi</option>
+        <option>Japanese</option>
+        <option>Telugu</option>
+        <option>Chinese</option>
+        <option>Korean</option>
+      </select>
+      <button id="load-btn">Load Flashcards</button>
+    </div>
+
+    <div id="flashcard-section">
+      <h2> Flashcards</h2>
+      <div id="word-container" class="cards"></div>
+    </div>
+
+    <div id="quiz-section" style="display: none;">
+      <h2> Quiz Time</h2>
+      <p id="quiz-question"></p>
+      <div id="quiz-options"></div>
+      <p id="quiz-result"></p>
+      <button id="next-btn">Next Question</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
